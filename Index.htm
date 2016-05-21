@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/ico" href="Images/number.ico">
+    <link rel="stylesheet/less" href="style.less" />
+    <link href='https://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
+    <script src="jquery-1.12.3.min.js"></script>
+    <script src="less.min.js"></script>
+    <script src="game.js"></script>
+    <title>Digits</title>
+</head>
+<body>
+    <header>
+        <p>Digits</p>
+    </header>
+    <section id="main">
+        <nav id="nav">
+            Total:
+            <br />
+            <img src="Images/box.png" />
+            <p id="blue">0</p>
+            <img src="Images/whitebox.png" />
+            <p id="white">27</p>
+        </nav>
+        <section id="field"></section>
+        <aside>
+            <input type="button" id="newGame" value="New game" />
+            <br />
+            <br />
+            <input type="button" id="next" value="Next" />
+            <br />
+            <br />
+            <input type="button" id="btnPopup" value="Instruntion" data-href="#popup1" onclick="location = '#popup1'" href="#popup1"/>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>HOW TO PLAY</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        In this logic game you have to find two numbers which are the same or together ten (10). Then the two numbers will be crossed out. For example 7 and 3, 1 and 9 or 6 and 6.
+                        The two numbers have to be side by side or about each other. By doing this you can skip crossed out numbers.
+                        If no more numbers fit together you have to press the "Next" button and all the not crossed out numbers are written behind the remaining ones. You have to look carefully, that you do not miss any matching numbers.
+                        The goal is to cross out all numbers. Try it out now!
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <footer></footer>
+</body>
+</html>
